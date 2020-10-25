@@ -40,14 +40,14 @@ export const DISHES: Dish[] = [
     comments: [
       {
         rating: 5,
-        comment: "Vielen Dank für kurse.",
-        author: "Mukaddes Sökmen",
+        comment: "Merci pour les cours.",
+        author: "Sükrü Ünlü",
         date: "2020-10-16T17:57:28.556094Z"
       },
       
       {
         rating: 5,
-        comment: "Danke Schön",
+        comment: "C'est un bon projet",
         author: "Ali Ögretmen",
         date: "2020-09-22T17:57:28.556094Z"
       },
@@ -63,15 +63,15 @@ export const DISHES: Dish[] = [
     comments: [
       {
         rating: 5,
-        comment: "Vielen Dank für kurse.",
-        author: "Mukaddes Sökmen",
+        comment: "Grazie per i corsi.",
+        author: "Mehmet Sökmen",
         date: "2020-10-16T17:57:28.556094Z"
       },
       
       {
         rating: 5,
-        comment: "Danke Schön",
-        author: "Ali Ögretmen",
+        comment: "È un bel progetto",
+        author: "Ahmet Veli",
         date: "2020-09-22T17:57:28.556094Z"
       },
     ],
@@ -86,15 +86,15 @@ export const DISHES: Dish[] = [
     comments: [
       {
         rating: 5,
-        comment: "Vielen Dank für kurse.",
-        author: "Mukaddes Sökmen",
+        comment: "Tesekkur ederim.",
+        author: "Erkam Ilhan",
         date: "2020-10-16T17:57:28.556094Z"
       },
       
       {
         rating: 5,
-        comment: "Danke Schön",
-        author: "Ali Ögretmen",
+        comment: "Güzel bir proje",
+        author: "Zeynep Ilhan",
         date: "2020-09-22T17:57:28.556094Z"
       },
     ],
