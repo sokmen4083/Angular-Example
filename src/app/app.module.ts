@@ -13,12 +13,16 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import { KurseComponent } from './kurse/kurse.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KurseComponent,
-    DishdetailComponent
+    DishdetailComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
