@@ -1,22 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Dish } from '../shared/dish'
+import { Dish } from '../shared/dish';
+import { DISHES } from '../shared/dishes';
 
-const DISHES: Dish[] = [
-  {
-    id: '0',
-    name: 'Sprachkommission',
-    image: '/assets/images/sprechen-komision.jpg',
-    // tslint:disable-next-line:max-line-length
-    description: 'Als Verein Verfolgt Sprachkommission produzieren wir seit Anfang 2019 Projekte und setzen das Sprachenlernen systematisch um.'
-  },
-  {
-    id: '1',
-    name: 'Kurs',
-    image: '/assets/images/kurs.jpg',
-    description: 'Wir helfen derzeit unseren Freunden, die es brauchen, ihre Sprache effektiv und ergebnisorientiert zu lernen.'
-  },
-  
-]
 
 @Component({
   selector: 'app-kurse',
@@ -25,13 +10,17 @@ const DISHES: Dish[] = [
 })
 export class KurseComponent implements OnInit { 
 
-  dishes = DISHES;
+  dishes: Dish[] = DISHES;
 
-  selectedDish = DISHES[0]; 
+  selectedDish: Dish; 
 
   constructor() { }
 
   ngOnInit() {
+  }
+  
+  onSelect(dish: Dish) {
+    this.selectedDish = dish;
   }
 
 }
