@@ -4,7 +4,7 @@ import { Dish } from '../shared/dish'
 const DISHES: Dish[] = [
   {
     id: '0',
-    name: 'Sprechen-komision',
+    name: 'Sprachkommission',
     image: '/assets/images/sprechen-komision.jpg',
     // tslint:disable-next-line:max-line-length
     description: 'Als Verein Verfolgt Sprachkommission produzieren wir seit Anfang 2019 Projekte und setzen das Sprachenlernen systematisch um.'
