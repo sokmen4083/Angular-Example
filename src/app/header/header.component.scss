@@ -1,7 +1,7 @@
 $lt-gray: #ddd;
 $background-dark: #512DA8;
-$background-moredark: #4527A0;
 $background-pale: #D1C4E9;
+$background-light: #FFFF00;
 
 @mixin zero-margin($pad-up-down, $pad-left-right) {
     margin: 0px auto;
@@ -13,6 +13,6 @@ $background-pale: #D1C4E9;
     min-height: 150px;
 }
 
-.active {
-    background: $background-moredark;
+a:hover{
+    background: $background-light; 
 }

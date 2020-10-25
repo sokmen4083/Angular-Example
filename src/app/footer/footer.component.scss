@@ -1,6 +1,6 @@
 $lt-gray: #ddd;
 $background-dark: #512DA8;
-$background-light: #9575CD;
+$background-light: #FFFF00;
 $background-pale: #D1C4E9;
 
 @mixin zero-margin($pad-up-down, $pad-left-right) {
@@ -11,6 +11,10 @@ $background-pale: #D1C4E9;
 .footer{
     background-color: $background-pale;
     @include zero-margin(20px, 0px);
+}
+
+a:hover{
+    background: $background-light; 
 }
 
 .btn-facebook {color:#fff!important; background-color:#3b5998!important;}
