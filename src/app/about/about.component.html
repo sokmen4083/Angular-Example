@@ -1,3 +1,103 @@
-<p>
-  about works!
-</p>
+<div class="container"
+fxLayout="column"
+fxLayoutGap="10px">
+
+  <div fxFlex>
+      <div>
+        <h3>About Us</h3>
+        <hr>
+      </div>
+  </div>
+
+  <div fxFlex>
+    <div fxLayout="column" fxLayout.gt-sm="row">
+      <div fxFlex="70">
+        <h2>Unsere Geschichte</h2>
+        <p>Kurzer Rückblick und Entstehung
+          Der Putschversuch im Juli 2016 hat das politische und gesellschaftliche Klima in der Türkei
+          auf den Kopf gestellt. Noch bevor überhaupt klar war, was gerade passierte, hatte die Regierung 
+          die vermeintlichen Verantwortlichen des Putschversuchs identifiziert. Prompt wurden sie an den 
+          Pranger gestellt. Es folgten Verhaftungen. Aber auch Entlassungen aus dem Staatsdienst und dem 
+          privaten Sektor wurden zur Regel.</p>
+        <p>Mittlerweile wurden nach offiziellen Angaben 146,634 Personen des Amtes enthoben, 
+           über 126,778 Menschen in Untersuchungshaft gesetzt und 59,254 Personen verhaftet 
+           (darunter über 17,000 Frauen und über 700 Babys und Kleinkinder). Den offiziellen Zahlen 
+           zufolge beteiligten sich 8.651 Menschen am Putschversuch.</p>
+         <p>Inhaftierungen erfolgen in vielen Fällen aufgrund von unklaren Anklagen und Beweisen. 
+            Personen können aufgrund blosser Anschuldigungen und Denunziationen durch dritte Personen 
+            in den Fokus der Behörden geraten. Es genügt sogar, eine Ein-Dollar-Note mit einem „F“ 
+            zu besitzen.</p>    
+          <p>Mehrere Tausend Menschen mussten aus Angst vor Inhaftierung das Land verlassen. 
+             Selbst diejenigen, die auf der Flucht sind, müssen mit Verfolgung rechnen. 
+             So gibt es bereits mehrere Fälle von Entführungen aus dem Ausland, die in internationalen 
+             Medienberichten festgehalten wurden.</p>
+           <p>Seit mehreren Monaten besteht ein Ausnahmezustand, in dem der Rechtsstaat ausser Kraft 
+              gesetzt wurde und mit Dekreten Menschenrechte verletzt werden. Das Willkür-Regime hat sich 
+              fest etabliert. Zudem wurde die Europäische Menschenrechtskonvention (EMRK) seit mehreren 
+              Monaten ausgesetzt.</p>
+           <p>Die Folgen der eben genannten Dekrete sind: Enteignungen, Inhaftierungen, Diskriminierungen,
+              Diffamierungen. Die direkt Betroffenen finden weder eine Alternativanstellung noch verfügen 
+              sie über eine Sozial- oder Krankenversicherung, Teile der Sanktionen umfassen auch Verwandte 
+              sowie Ehepartner und Kinder. Somit werden den Menschen die existentiellen Grundbedürfnisse 
+              entzogen. Ein führender Funktionär der türkischen Regierungspartei empfiehlt den Betroffenen 
+              (sarkastisch), Baumwurzeln zu essen. Auch Menschen im Exil sind auf Hilfe angewiesen.</p> 
+           <p>Die herkömmlichen Hilfsorganisationen greifen diese Angelegenheit aufgrund ihrer 
+              politischen Brisanz nicht auf. Denn die Regierung geht auch gegen diejenigen rigoros vor, 
+              die den betroffenen Menschen helfen. So wurden Tätigkeiten von mehreren internationalen 
+              Hilfswerken nach staatlichen Repressionen eingestellt. Die Vielzahl der mittlerweile aus 
+              allen gesellschaftlichen Kreisen betroffenen Opfer bewegt uns, etwas zu unternehmen, damit 
+              das Leid von diesen Menschen gelindert wird.</p>
+      </div>
+      <div fxFlex="30">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>
+              <h2></h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <dl>
+              <dt></dt>
+              <dd></dd>
+              <dt></dt>
+              <dd></dd>
+              <dt></dt>
+              <dd></dd>
+              <dt></dt>
+              <dd></dd>
+            </dl>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+ 
+  <div fxFlex>
+    <mat-card>
+      <blockquote>
+        <h3></h3>
+        <footer>
+        </footer>
+      </blockquote>
+    </mat-card>
+  </div>
+
+
+  <div fxFlex>
+    <h2>Corporate Leadership</h2>
+    <mat-list>
+      <mat-list-item *ngFor="let leader of leaders">
+        <img mat-list-avatar src={{leader.image}} alt={{leader.name}}>
+        <p mat-line>
+          <span> {{leader.name}}</span>
+        </p>
+        <p mat-line>
+          <span> {{leader.designation}}</span>
+        </p>
+        <p mat-line>
+          <span> {{leader.description}}</span>
+        </p>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>

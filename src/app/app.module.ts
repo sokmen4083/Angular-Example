@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 
 import 'hammerjs';
 import { KurseComponent } from './kurse/kurse.component';
-import { DishdetailComponent } from './dishdetail/dishdetail.component';
+import { DishDetailComponent } from './dishdetail/dishdetail.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
@@ -21,13 +21,14 @@ import { ContactComponent } from './contact/contact.component';
 
 import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
+import { LeaderService } from './services/leader.service';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
     KurseComponent,
-    DishdetailComponent,
+    DishDetailComponent,
     HeaderComponent,
     FooterComponent,
     AboutComponent,
@@ -47,7 +48,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
   ],
   providers: [
     DishService,
-    PromotionService  
+    PromotionService,
+    LeaderService  
   ],
   bootstrap: [AppComponent]
 })
