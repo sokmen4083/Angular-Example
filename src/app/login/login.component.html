@@ -1,6 +1,6 @@
 <p>{{ user | json }}</p>
 
-<form novalidate (ngSubmit)="onSubmit()">
+<form novalidate #loginForm="ngForm" (ngSubmit)="onSubmit()">
 
   <mat-dialog-content>
     <p>
@@ -23,6 +23,37 @@
       <mat-form-field>
         <input matInput placeholder="Password" type="password" [(ngModel)]="user.password" name="password">
       </mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>Canton</mat-label>
+  <select matNativeControl required>
+    <option value="AG"> Aargau</option>
+				<option value="AI"> Appenzell Innerrhoden</option>
+				<option value="AR">Appenzell Ausserrhoden</option>
+				<option value="BE">Bern</option>
+				<option value="BL">Basel-Landschaft</option>
+				<option value="BS">Basel-Stadt</option>
+				<option value="FR">Fribourg (Freiburg)</option>
+				<option value="GE">Geneva</option>
+				<option value="GL">Glarus</option>
+				<option value="GR">Graubünden (Grigioni, Grischun)</option>
+				<option value="JU">Jura</option>
+				<option value="LU">Luzern</option>
+				<option value="NE">Neuchâtel</option>
+				<option value="NW"> Nidwalden</option>
+				<option value="OW">Obwalden</option>
+				<option value="SG">St. Gallen (Sankt Gallen)</option>
+				<option value="SH">Schaffhausen</option>
+				<option value="SO">Solothurn</option>
+				<option value="SZ">Schwyz</option>
+				<option value="TG">Thurgau</option>
+				<option value="TI">Ticino</option>
+				<option value="UR">Uri</option>
+				<option value="VD">Vaud</option>
+				<option value="VS">Valais (Wallis)</option>
+				<option value="ZG">Zug</option>
+				<option value="ZH">Zürih (Zürich)</option>
+  </select>
+</mat-form-field><br>
       <mat-checkbox [(ngModel)]="user.remember" name="remember">Remember Me</mat-checkbox>
     </p>
   </mat-dialog-content>
